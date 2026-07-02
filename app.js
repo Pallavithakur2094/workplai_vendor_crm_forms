@@ -5,6 +5,11 @@ document.addEventListener('DOMContentLoaded', () => {
     el.removeAttribute('disabled');
   });
 
+  // Prevent all form submissions (stops button clicks from reloading page)
+  document.querySelectorAll('form').forEach(form => {
+    form.addEventListener('submit', (e) => e.preventDefault());
+  });
+
   const viewSignup = document.getElementById('view-signup');
   const viewDashboard = document.getElementById('view-dashboard');
   const signupForm = document.getElementById('signup-form');

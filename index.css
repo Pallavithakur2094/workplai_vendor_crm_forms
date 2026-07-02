@@ -367,49 +367,7 @@ textarea.form-control {
   gap: 2rem;
 }
 
-@media (max-width: 1024px) {
-  .dashboard-view {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-  .stepper-card {
-    padding: 1rem;
-  }
-  .stepper {
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-    gap: 0.5rem;
-    padding-bottom: 0.5rem;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-  }
-  .step-item {
-    flex-direction: row;
-    align-items: center;
-    padding: 0.5rem 0.75rem;
-    min-width: max-content;
-    margin-bottom: 0;
-  }
-}
 
-@media (max-width: 600px) {
-  header {
-    padding: 1rem !important;
-  }
-  .logo-section h1 {
-    font-size: 1.2rem;
-  }
-  .user-name {
-    display: none;
-  }
-  .container {
-    padding: 0.75rem !important;
-  }
-  .welcome-card, .glass-card {
-    padding: 1.25rem 0.75rem !important;
-  }
-}
 
 /* Sidebar Stepper Navigation */
 .stepper-card {
@@ -968,4 +926,65 @@ input[type="checkbox"]:checked + .switch-control::after {
 /* Helper hidden class */
 .hidden {
   display: none !important;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 1024px) {
+  .dashboard-view {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .stepper-card {
+    padding: 1.25rem !important;
+  }
+  .grid-2, .grid-3 {
+    grid-template-columns: 1fr !important;
+  }
+  main {
+    padding: 0 1rem !important;
+    margin: 1.5rem auto !important;
+  }
+  .header-container {
+    padding: 1rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo-section h1 {
+    font-size: 1.1rem;
+  }
+  .user-name {
+    display: none;
+  }
+  .user-profile-badge {
+    padding: 0.35rem 0.6rem !important;
+    gap: 0.5rem !important;
+  }
+  main {
+    padding: 0 0.5rem !important;
+    margin: 1rem auto !important;
+  }
+  .welcome-card, .glass-card {
+    padding: 1.25rem 0.75rem !important;
+  }
+  .stepper-title {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .step-item {
+    gap: 0.75rem !important;
+    padding: 0.6rem 0.75rem !important;
+  }
+  .step-info {
+    min-width: 0;
+  }
+  .step-title {
+    font-size: 0.8rem !important;
+    white-space: normal;
+    word-wrap: break-word;
+  }
 }

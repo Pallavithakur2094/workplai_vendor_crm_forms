@@ -370,6 +370,44 @@ textarea.form-control {
 @media (max-width: 1024px) {
   .dashboard-view {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .stepper-card {
+    padding: 1rem;
+  }
+  .stepper {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+  .step-item {
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+    min-width: max-content;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 1rem !important;
+  }
+  .logo-section h1 {
+    font-size: 1.2rem;
+  }
+  .user-name {
+    display: none;
+  }
+  .container {
+    padding: 0.75rem !important;
+  }
+  .welcome-card, .glass-card {
+    padding: 1.25rem 0.75rem !important;
   }
 }
 
@@ -433,13 +471,13 @@ textarea.form-control {
 }
 
 .step-item:hover {
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(0, 0, 0, 0.03);
 }
 
 .step-item.active {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.15);
-  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.02);
+  background: #e5e5ea;
+  border-color: rgba(0, 0, 0, 0.12);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .step-item.active .step-title {

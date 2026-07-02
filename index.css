@@ -937,19 +937,22 @@ html, body {
   .dashboard-view {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    min-width: 0 !important;
   }
-  .stepper-card {
-    padding: 1.25rem !important;
+  .stepper-card, .form-content-card {
+    min-width: 0 !important;
   }
-  .grid-2, .grid-3 {
+  .grid-2, .grid-3, .calc-grid {
     grid-template-columns: 1fr !important;
   }
   main {
     padding: 0 1rem !important;
     margin: 1.5rem auto !important;
+    min-width: 0 !important;
   }
   .header-container {
     padding: 1rem !important;
+    min-width: 0 !important;
   }
 }
 
@@ -970,6 +973,10 @@ html, body {
   }
   .welcome-card, .glass-card {
     padding: 1.25rem 0.75rem !important;
+  }
+  .form-section {
+    padding: 1rem !important;
+    margin-bottom: 1.5rem !important;
   }
   .stepper-title {
     font-size: 1rem;

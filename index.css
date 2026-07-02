@@ -469,11 +469,7 @@ textarea.form-control {
 }
 
 .step-code {
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  color: #636366;
-  text-transform: uppercase;
+  display: none !important;
 }
 
 .step-title {
@@ -775,7 +771,11 @@ textarea.form-control {
 }
 
 .form-actions-footer {
-  display: none !important;
+  border-top: 1px solid var(--border-glass);
+  padding-top: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
 }
 
 .form-subtitle {
